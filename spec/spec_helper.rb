@@ -1,13 +1,17 @@
 # frozen_string_literal: true
+
 require 'bundler/setup'
 require 'pry'
 require 'simplecov'
+require 'pdf/reader'
 
 SimpleCov.start do
   add_filter '/spec/'
 end
 
 require 'stamp_pdf'
+
+Dir['./spec/support/**/*.rb'].sort.each { |f| require f }
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

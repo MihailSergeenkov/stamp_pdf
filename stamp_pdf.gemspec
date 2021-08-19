@@ -18,11 +18,13 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 2.1'
+  spec.add_development_dependency 'pdf-reader', '~> 2.5'
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec', '~> 3.9'
   spec.add_development_dependency 'rubocop', '~> 0.80'
   spec.add_development_dependency 'simplecov', '~> 0.18'
 
+  spec.add_dependency 'combine_pdf', '~> 1.0'
   spec.add_dependency 'prawn', '~> 2.3'
 end
